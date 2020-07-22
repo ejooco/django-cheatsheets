@@ -18,46 +18,6 @@ blog/templates/blog/
 Create home.html and about.html within the blog/templates/blog/ folder
 
 
-```python
-!tree
-```
-
-    [01;34m.[00m
-    ├── [01;34mblog[00m
-    │   ├── admin.py
-    │   ├── apps.py
-    │   ├── __init__.py
-    │   ├── [01;34mmigrations[00m
-    │   │   └── __init__.py
-    │   ├── models.py
-    │   ├── [01;34m__pycache__[00m
-    │   │   ├── __init__.cpython-37.pyc
-    │   │   ├── urls.cpython-37.pyc
-    │   │   └── views.cpython-37.pyc
-    │   ├── [01;34mtemplates[00m
-    │   │   └── [01;34mblog[00m
-    │   │       ├── about.html
-    │   │       └── home.html
-    │   ├── tests.py
-    │   ├── urls.py
-    │   └── views.py
-    ├── db.sqlite3
-    ├── [01;34mdjango_project[00m
-    │   ├── asgi.py
-    │   ├── __init__.py
-    │   ├── [01;34m__pycache__[00m
-    │   │   ├── __init__.cpython-37.pyc
-    │   │   ├── settings.cpython-37.pyc
-    │   │   ├── urls.cpython-37.pyc
-    │   │   └── wsgi.cpython-37.pyc
-    │   ├── settings.py
-    │   ├── urls.py
-    │   └── wsgi.py
-    └── [01;32mmanage.py[00m
-    
-    7 directories, 24 files
-
-
 ### Add blog application to list of installed apps
 
 This is so that Django knows to look here for the templates directory
@@ -117,16 +77,6 @@ blog/templates/blog/home.html
         <h1>Blog home!</h1>
     </body>
 </html>
-```
-
-
-```python
-
-```
-
-
-```python
-
 ```
 
 ## Create data for the templates to process. Move away from static pages
@@ -324,9 +274,4 @@ urlpatterns = [
     path('', views.home, name='blog-home'),
     path('about/', views.about, name='blog-about'),
 ]
-```
-
-
-```python
-
 ```
