@@ -7,7 +7,7 @@
 
 users/models.py
 
-```
+```python
 from django.db import models
 from django.contrib.auth.models import User
 
@@ -22,7 +22,7 @@ class Profile(models.Model):
 ```
 
 You may need to pip install Pillow
-```python
+```
 pip install Pillow
 ```
 
@@ -44,7 +44,7 @@ admin.site.register(Profile)
 ```
 
 Add MEDIA_ROOT and MEDIA_URL to django_project/settings.py
-```
+```python
 STATIC_URL = '/static/'
 
 # where django stores uploaded files.
@@ -81,12 +81,12 @@ users/templates/users/profile.html
 django_project/urls.py
 
 ABOVE urlpatterns
-```
+```python
 from django.conf import settings
 from django.conf.urls.static import static
 ```
 BELOW urlpatterns
-```
+```python
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 ```
