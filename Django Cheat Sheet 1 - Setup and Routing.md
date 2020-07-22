@@ -62,38 +62,6 @@ Navigate to http://127.0.0.1:8000 to view splash page
 python manage.py startapp blog
 ```
 
-
-```python
-!tree
-```
-
-    [01;34m.[00m
-    ├── [01;34mblog[00m
-    │   ├── admin.py
-    │   ├── apps.py
-    │   ├── __init__.py
-    │   ├── [01;34mmigrations[00m
-    │   │   └── __init__.py
-    │   ├── models.py
-    │   ├── tests.py
-    │   └── views.py
-    ├── db.sqlite3
-    ├── [01;34mdjango_project[00m
-    │   ├── asgi.py
-    │   ├── __init__.py
-    │   ├── [01;34m__pycache__[00m
-    │   │   ├── __init__.cpython-37.pyc
-    │   │   ├── settings.cpython-37.pyc
-    │   │   ├── urls.cpython-37.pyc
-    │   │   └── wsgi.cpython-37.pyc
-    │   ├── settings.py
-    │   ├── urls.py
-    │   └── wsgi.py
-    └── [01;32mmanage.py[00m
-    
-    4 directories, 18 files
-
-
 ## Creating views and setting up routing
 
 ### Create a view within the blog app
@@ -162,33 +130,3 @@ urlpatterns = [
 ```
 
 Now navigating to http://127.0.0.1 should route to the blog app
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
