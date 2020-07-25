@@ -2,8 +2,11 @@
 ### by ejooco
 
 **blog/views.py**
+
 Add pagination to PostListView
+
 Add UserPostListView
+
 Add 2 imports
 ```python
 from django.contrib.auth.models import User
@@ -28,8 +31,11 @@ class UserPostListView(ListView):
 ```
 
 **blog/urls.py**
+
 Add UserPostListView to imports
+
 Add UserPostListView to urlpatterns
+
 ```python
 from django.urls import path
 from .views import (
@@ -54,7 +60,9 @@ urlpatterns = [
 ]
 ```
 **blog/templates/blog/home.html**
+
 Add pagination buttons at the bottom of page
+
 Add routing for user href links
 ```
 {% extends "blog/base.html" %}
@@ -134,6 +142,7 @@ Create **blog/templates/blog/user_posts.html** template
 ```
 
 **blog/templates/blog/post_detail.html**
+
 Add routing for user href links
 ```
 {% extends "blog/base.html" %}
